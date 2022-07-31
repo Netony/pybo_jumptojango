@@ -1,5 +1,5 @@
 {% load static %}
-<<!doctype html>
+<!doctype html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -10,8 +10,12 @@
     <title>Hello, Pybo!</title>
 </head>
 <body>
+<!-- 네비게이션바 -->
+{% inlclude "navbar.html" %}
 <!-- 기본 템플릿 안에 삽입될 내용 start -->
 {% block content %}
 {% endblock %}
+<!-- 기본 템플릿 안에 삽입될 내용 End -->
+<script src="{% static 'bootstrap.min.js' %}"></script>
 </body>
 </html>
